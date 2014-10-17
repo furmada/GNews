@@ -1,0 +1,5 @@
+Privacy Policy
+
+News Reader for Google News (GNews) does not store, transmit, or parse any personal data.
+Any webpage opened within GNews may have a different privacy policy, and GNews is not responsible for any
+personal data collected, transmitted, or parsed by these sites.
