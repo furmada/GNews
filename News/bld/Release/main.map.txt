@@ -1,0 +1,22 @@
+[ResourceMetadata]
+"ResourceDimensions"		"scale-100"
+"ResourceDimensions"		"language-en-us"
+"ResourceDimensions"		"language-en-US"
+
+[Files]
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\split.pri"			"resources.pri"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\PackageLayout\default.html"			"default.html"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\PackageLayout\blank.html"			"blank.html"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\PackageLayout\js\jquery.js"			"js\jquery.js"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\PackageLayout\js\default.js"			"js\default.js"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\PackageLayout\images\wide.scale-100.png"			"images\wide.scale-100.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\PackageLayout\images\storelogo.scale-100.png"			"images\storelogo.scale-100.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\PackageLayout\images\splashscreen.scale-100.png"			"images\splashscreen.scale-100.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\PackageLayout\images\smalllogo.scale-100.png"			"images\smalllogo.scale-100.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\PackageLayout\images\sl.png"			"images\sl.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\PackageLayout\images\logo.scale-100.png"			"images\logo.scale-100.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\PackageLayout\images\loading.GIF"			"images\loading.GIF"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\PackageLayout\images\bl.png"			"images\bl.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\PackageLayout\images\badge.png"			"images\badge.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\PackageLayout\images\back.png"			"images\back.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\PackageLayout\css\default.css"			"css\default.css"

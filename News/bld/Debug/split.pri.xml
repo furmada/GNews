@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>100</Scale>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="blank.html" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/blank.html">
+				<Candidate type="Path">
+					<Value>blank.html</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="default.html" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/default.html">
+				<Candidate type="Path">
+					<Value>default.html</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="css">
+				<NamedResource name="default.css" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/css/default.css">
+					<Candidate type="Path">
+						<Value>css\default.css</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="images">
+				<NamedResource name="back.png" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/images/back.png">
+					<Candidate type="Path">
+						<Value>images\back.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="badge.png" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/images/badge.png">
+					<Candidate type="Path">
+						<Value>images\badge.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="bl.png" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/images/bl.png">
+					<Candidate type="Path">
+						<Value>images\bl.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="loading.GIF" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/images/loading.GIF">
+					<Candidate type="Path">
+						<Value>images\loading.GIF</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="logo.png" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/images/logo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="sl.png" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/images/sl.png">
+					<Candidate type="Path">
+						<Value>images\sl.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="smalllogo.png" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/images/smalllogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\smalllogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="splashscreen.png" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/images/splashscreen.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\splashscreen.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="storelogo.png" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/images/storelogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\storelogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="wide.png" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/images/wide.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>images\wide.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="js">
+				<NamedResource name="bgtask.js" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/js/bgtask.js">
+					<Candidate type="Path">
+						<Value>js\bgtask.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="default.js" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/js/default.js">
+					<Candidate type="Path">
+						<Value>js\default.js</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="jquery.js" uri="ms-resource://0a2d8663-47a3-4d9c-ae4e-69a9e3532ad4/Files/js/jquery.js">
+					<Candidate type="Path">
+						<Value>js\jquery.js</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

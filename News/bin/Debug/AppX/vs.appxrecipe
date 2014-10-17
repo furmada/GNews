@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SURFACE</Machine>
+    <WindowsUser>Adam</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>40969furmada.NewsReaderforGoogleNews</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\</IntermediateOutputPath>
+    <RegisteredManifestChecksum>8EEAA444ACB7F96994A8938E5E5B447BD57DC198A9DA37DCB05F542D5A46C304</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>40969furmada.NewsReaderforGoogleNews_1.1.0.1_neutral__zsyhmrb2982bg</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>40969furmada.NewsReaderforGoogleNews_zsyhmrb2982bg!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>40969furmada.NewsReaderforGoogleNews</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=4933A982-6D4B-4019-A967-647980B50042</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.1</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-10-17T13:29:03.621</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\blank.html">
+      <PackagePath>blank.html</PackagePath>
+      <Modified>2014-09-20T03:40:55.928</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2014-10-17T04:12:10.706</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\images\back.png">
+      <PackagePath>images\back.png</PackagePath>
+      <Modified>2014-09-19T23:59:58.547</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\images\badge.png">
+      <PackagePath>images\badge.png</PackagePath>
+      <Modified>2014-09-25T18:21:27.645</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\images\bl.png">
+      <PackagePath>images\bl.png</PackagePath>
+      <Modified>2014-09-20T18:56:17.749</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\images\logo.scale-100.png">
+      <PackagePath>images\logo.scale-100.png</PackagePath>
+      <Modified>2014-09-20T18:56:17.749</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\images\sl.png">
+      <PackagePath>images\sl.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-09-20T18:58:05.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\images\smalllogo.scale-100.png">
+      <PackagePath>images\smalllogo.scale-100.png</PackagePath>
+      <Modified>2014-09-20T18:58:05.803</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\images\splashscreen.scale-100.png">
+      <PackagePath>images\splashscreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-09-20T18:59:34.355</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\images\storelogo.scale-100.png">
+      <PackagePath>images\storelogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-09-20T19:00:21.990</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\images\wide.scale-100.png">
+      <PackagePath>images\wide.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2014-09-23T18:19:21.443</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\images\loading.GIF">
+      <PackagePath>images\loading.GIF</PackagePath>
+      <Modified>2014-09-19T18:50:59.132</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\js\default.js">
+      <PackagePath>js\default.js</PackagePath>
+      <Modified>2014-10-17T04:16:17.123</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\js\jquery.js">
+      <PackagePath>js\jquery.js</PackagePath>
+      <Modified>2014-09-20T01:08:32.460</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\css\default.css">
+      <PackagePath>css\default.css</PackagePath>
+      <Modified>2014-10-16T14:11:21.708</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bin\Debug\ReverseMap\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-10-17T13:29:03.371</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

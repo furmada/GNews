@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="application-name" content="Google News" />
+    <meta name="msapplication-TileColor" content="#718CDE" />
+    <title>News</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- News references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="js/jquery.js"></script>
+    <style>
+        body {
+            background-color:#718CDE;
+            overflow-y:scroll;
+            overflow-x:hidden;
+            padding: 20px;
+        }
+        .item {
+            background-color:gray;
+            width: 500px;
+            height: 150px;
+            float: left;
+            margin: 20px;
+            padding: 8px;
+        }
+        #page-wrap {
+            overflow:scroll;
+        }
+    </style>
+</head>
+<body onload="initialize('http://news.google.com/?output=rss&hl=en', true)">
+    <center><img style="visibility:visible; position:absolute; float:left; top:45%; left:45%; z-index:-1" src="images/loading.GIF" id="loading" /></center>
+            <div id="main" style="visibility:visible; z-index:1;">
+                <p style="transform:rotate(90deg); float:left; position:absolute; font-size:120px; z-index:-4; left:80%; top:5%;" id="category"></p>
+                <table id="page-wrap">
+                    <tr id="row1">
+                        
+                    </tr>
+                    <tr id="row2">
+        
+                    </tr>
+                    <tr id="row3">
+
+                    </tr>
+                </table>
+            </div>
+            <div id="web" style="visibility:hidden; z-index:-1;">
+                <img src="images/back.png" id="webImg" onclick="disableWeb()" style="visibility:hidden; float:left; position:absolute; top:-20px; left:10px; transform:scale(0.2)"/>
+                <h2 id="webTit" style="visibility:hidden; position:absolute; left: 10%; top:10px;"></h2>
+                <x-ms-webview id="webBrowse" src="blank.html" style="visibility:inherit; position:absolute; width:100%; height:91%; left: 0px; top:7%;"></x-ms-webview>
+                <a href="blank.html" id="webURL" style="color:darkblue; visibility:inherit; position:absolute; top:98%; left:47%">View in browser</a>
+            </div>
+
+    <div aria-label="App Settings Flyout" data-win-control="WinJS.UI.SettingsFlyout" data-win-options="{settingsCommandId:'Settings', width:'narrow'}">
+        <!-- Add the background color matching you app tile color to the Settings flyout header. -->
+        <!-- Use add the win-ui-dark class if the background color requires a white text  -->
+        <!-- Add the app small logo to the Settings flyout header                         -->
+        <div class="win-header win-ui-light" style="background-color: #718CDE;">
+            <button class="win-backbutton" onclick="WinJS.UI.SettingsFlyout.show()" type="button"></button>
+            <div class="win-label">Settings</div>
+            <img alt="smalllogo" src="images/smalllogo.scale-100.png" style="height: 30px; width: 30px; position: absolute; right: 40px;" />
+        </div>
+        <div class="win-content">
+            <p>
+                This app takes data from Google News, but it is not affiliated with Google.<br />
+                It does not store any personal information.<br />
+                Made by Adam F (furmada).
+            </p>
+        </div>
+    </div>
+</body>
+</html>

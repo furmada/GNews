@@ -1,0 +1,15 @@
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bin\Debug\AppxManifest.xml
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bin\Debug\GNews.build.appxrecipe
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\priconfig.xml
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\priconfig.xml.intermediate
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\layout.resfiles
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\layout.resfiles.intermediate
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\resources.resfiles
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\resources.resfiles.intermediate
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\pri.resfiles
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\pri.resfiles.intermediate
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\qualifiers.txt
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\qualifiers.txt.intermediate
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\ProjectArchitectures.txt
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bin\Debug\ReverseMap\resources.pri

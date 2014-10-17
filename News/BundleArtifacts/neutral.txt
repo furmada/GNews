@@ -1,0 +1,1 @@
+MainPackage=C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bin\Release\GNews_1.1.0.1_Bundle\GNews_1.1.0.1_AnyCPU.appx

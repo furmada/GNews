@@ -1,0 +1,22 @@
+﻿[ResourceMetadata]
+"ResourceDimensions"		"scale-100"
+"ResourceDimensions"		"language-en-us"
+
+[Files]
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\filemap.pri"			"resources.pri"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\default.html"			"default.html"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\blank.html"			"blank.html"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\js\jquery.js"			"js\jquery.js"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\js\default.js"			"js\default.js"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\js\bgtask.js"			"js\bgtask.js"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\images\wide.scale-100.png"			"images\wide.scale-100.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\images\storelogo.scale-100.png"			"images\storelogo.scale-100.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\images\splashscreen.scale-100.png"			"images\splashscreen.scale-100.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\images\smalllogo.scale-100.png"			"images\smalllogo.scale-100.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\images\sl.png"			"images\sl.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\images\logo.scale-100.png"			"images\logo.scale-100.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\images\loading.GIF"			"images\loading.GIF"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\images\bl.png"			"images\bl.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\images\badge.png"			"images\badge.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\images\back.png"			"images\back.png"
+"C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\PackageLayout\css\default.css"			"css\default.css"

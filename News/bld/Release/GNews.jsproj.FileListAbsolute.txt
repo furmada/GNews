@@ -1,0 +1,15 @@
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bin\Release\resources.pri
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bin\Release\AppxManifest.xml
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bin\Release\GNews.build.appxrecipe
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\priconfig.xml
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\priconfig.xml.intermediate
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\layout.resfiles
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\layout.resfiles.intermediate
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\resources.resfiles
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\resources.resfiles.intermediate
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\pri.resfiles
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\pri.resfiles.intermediate
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\qualifiers.txt
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\qualifiers.txt.intermediate
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Release\ProjectArchitectures.txt
