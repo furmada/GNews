@@ -1,1 +1,1 @@
-C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\AppPackages\GNews_1.1.0.1_Test\GNews_1.1.0.1_AnyCPU.appxbundle
+C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\AppPackages\GNews_1.2.0.0_Test\GNews_1.2.0.0_AnyCPU.appxbundle

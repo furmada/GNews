@@ -2,6 +2,18 @@
 // http://go.microsoft.com/fwlink/?LinkId=232509
 var webVisible = false;
 var tileDescs = ["Google News"];
+var dataTransferManager = Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView();
+dataTransferManager.addEventListener("datarequested", dataRequested);
+function dataRequested(e) {
+    var request = e.request;
+    if (webVisible == true) {
+        request.data.properties.title = document.getElementById("webTit").innerHTML;
+        request.data.setText(document.getElementById("webURL").href);
+    }
+    else {
+        alert("Open an article to share.");
+    }
+}
 function alert(message) {
 
     var msgBox = new Windows.UI.Popups.MessageDialog(message);
@@ -31,8 +43,8 @@ function catSetter(cat) {
         document.getElementById("category").innerHTML = "Business";
         initialize("http://news.google.com/?topic=b&output=rss&hl=en", false);
     }
-    if (cat == "Tech") {
-        document.getElementById("category").innerHTML = "Tech";
+    if (cat == "Technology") {
+        document.getElementById("category").innerHTML = "Technology";
         initialize("http://news.google.com/?topic=tc&output=rss&hl=en", false);
     }
     if (cat == "Sports") {
@@ -47,6 +59,7 @@ function openURL(se) {
     document.getElementById("webTit").setAttribute("style", "visibility:visible; position:absolute; left: 10%; top:10px;");
     document.getElementById("webImg").setAttribute("style", "visibility:visible; float:left; position:absolute; top:-20px; left:10px; transform:scale(0.2)");
     document.getElementById("main").setAttribute("style", "visibility:hidden; z-index:-1;");
+    document.getElementById("webURL").setAttribute("style", "visibility:visible; z-index:1; color:darkblue; position:absolute; top:98%; left:47%;");
     document.getElementById("webTit").innerHTML = document.getElementById(pid + "_tit").innerHTML;
     document.getElementById("webBrowse").setAttribute("src", window.toStaticHTML(pid));
     document.getElementById("webURL").href = window.toStaticHTML(pid);
@@ -59,6 +72,7 @@ function disableWeb() {
     document.getElementById("webTit").setAttribute("style", "visibility:hidden; position:absolute; left: 10%; top:10px;");
     document.getElementById("webImg").setAttribute("style", "visibility:hidden; float:left; position:absolute; top:-20px; left:10px; transform:scale(0.2)");
     document.getElementById("web").setAttribute("style", "visibility:hidden; z-index:-1;");
+    document.getElementById("webURL").setAttribute("style", "visibility:hidden; z-index:-1;");
     document.getElementById("main").setAttribute("style", "visibility:visible; z-index:1;");
     catSetter(document.getElementById("category").innerHTML);
 }
@@ -96,7 +110,7 @@ function clearAll() {
     var o_bus = document.createElement("option");
     o_bus.innerHTML = "Business";
     var o_tch = document.createElement("option");
-    o_tch.innerHTML = "Tech";
+    o_tch.innerHTML = "Technology";
     var o_spr = document.createElement("option");
     o_spr.innerHTML = "Sports";
     sel.appendChild(o_sel);

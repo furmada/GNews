@@ -51,7 +51,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <PackageCertificateKeyFile>GNews_StoreKey.pfx</PackageCertificateKeyFile>
     <AppxBundle>Always</AppxBundle>
-    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
     <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
     <PackageCertificateThumbprint>6BF7EE8392684C263A06B947D55B94A6BA0EE0B3</PackageCertificateThumbprint>
   </PropertyGroup>
