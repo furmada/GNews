@@ -8,19 +8,19 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>40969furmada.NewsReaderforGoogleNews</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bld\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>8EEAA444ACB7F96994A8938E5E5B447BD57DC198A9DA37DCB05F542D5A46C304</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>40969furmada.NewsReaderforGoogleNews_1.1.0.1_neutral__zsyhmrb2982bg</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>27DF45EA5749878CEFCCA8EB7038C529D3CBA465B48BC90AA052CE7F330298AE</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>40969furmada.NewsReaderforGoogleNews_1.2.0.0_neutral__zsyhmrb2982bg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>40969furmada.NewsReaderforGoogleNews_zsyhmrb2982bg!App</RegisteredUserModeAppID>
     <RegisteredPackageID>40969furmada.NewsReaderforGoogleNews</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=4933A982-6D4B-4019-A967-647980B50042</RegisteredPackagePublisher>
-    <RegisteredVersion>1.1.0.1</RegisteredVersion>
+    <RegisteredVersion>1.2.0.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-10-17T13:29:03.621</Modified>
+      <Modified>2014-11-07T19:19:45.033</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -30,7 +30,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2014-11-04T17:19:23.612</Modified>
+      <Modified>2014-11-07T18:42:01.497</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\images\back.png">
       <PackagePath>images\back.png</PackagePath>
@@ -78,7 +78,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2014-11-04T17:18:48.601</Modified>
+      <Modified>2014-11-08T22:24:59.015</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\js\jquery.js">
       <PackagePath>js\jquery.js</PackagePath>
@@ -90,7 +90,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\bin\Debug\ReverseMap\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-10-17T13:29:03.371</Modified>
+      <Modified>2014-11-07T19:19:44.830</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

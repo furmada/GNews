@@ -3,6 +3,7 @@
 var webVisible = false;
 var tileDescs = ["Google News"];
 var dataTransferManager = Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView();
+var localstr = WinJS.Application.local;
 dataTransferManager.addEventListener("datarequested", dataRequested);
 function dataRequested(e) {
     var request = e.request;
@@ -31,25 +32,29 @@ function catSetter(cat) {
         document.getElementById("category").innerHTML = "Main";
         initialize("http://news.google.com/?output=rss&hl=en", false);
     }
-    if (cat == "World") {
+    else if (cat == "World") {
         document.getElementById("category").innerHTML = "World";
         initialize("http://news.google.com/?topic=w&output=rss&hl=en", false);
     }
-    if (cat == "U.S.") {
+    else if (cat == "U.S.") {
         document.getElementById("category").innerHTML = "U.S.";
         initialize("http://news.google.com/?topic=n&output=rss&hl=en", false);
     }
-    if (cat == "Business") {
+    else if (cat == "Business") {
         document.getElementById("category").innerHTML = "Business";
         initialize("http://news.google.com/?topic=b&output=rss&hl=en", false);
     }
-    if (cat == "Technology") {
+    else if (cat == "Technology") {
         document.getElementById("category").innerHTML = "Technology";
         initialize("http://news.google.com/?topic=tc&output=rss&hl=en", false);
     }
-    if (cat == "Sports") {
+    else if (cat == "Sports") {
         document.getElementById("category").innerHTML = "Sports";
         initialize("http://news.google.com/?topic=s&output=rss&hl=en", false);
+    }
+    else {
+        document.getElementById("category").innerHTML = cat;
+        initialize("http://news.google.com/news/section?pz=1&cf=all&q=" + cat + "&output=rss", false);
     }
 }
 
@@ -120,15 +125,28 @@ function clearAll() {
     sel.appendChild(o_bus);
     sel.appendChild(o_tch);
     sel.appendChild(o_spr);
+    var prms = localstr.readText("categories", "").then(
+        function(data){
+            for (cc in data.split(",")) {
+                if (data.split(',')[cc] == "") { continue;}
+                var ccat = document.createElement("option");
+                ccat.innerHTML = data.split(",")[cc];
+                sel.appendChild(ccat);
+            }
+        }
+    );
     ie.appendChild(at);
     ie.appendChild(desc);
     ie.appendChild(sel);
     tileDescs = ["Google News"];
     document.getElementById("row1").appendChild(ie);
 }
+function loadCategoriesIntoField() {
+    localstr.writeText("categories", document.getElementById("cctext").value);
+    clearAll();
+}
 function initialize(url, first) {
     clearAll()
-    //alert("Init");
     var row = 1;
     if (first == true) {
         var ctext = document.getElementById("category");
@@ -142,7 +160,7 @@ function initialize(url, first) {
             var tit = document.createElement("h3");
             var cat = document.createElement("p");
             var pub = document.createElement("p");
-            var url = document.createElement("h4");
+            var url = document.createElement("h3");
             var hut = document.createElement("div");
             var hur = document.createElement("div");
             var lnk = el.find("link").text();
@@ -159,8 +177,9 @@ function initialize(url, first) {
             hur.setAttribute("id", lnk + "_url")
             hut.setAttribute("id", lnk + "_tit")
             url.setAttribute("onclick", "openURL(this)");
-            url.setAttribute("style", "color:darkblue;");
+            url.setAttribute("style", "color:darkblue;vertical-align:bottom;bottom:20px;");
             td.setAttribute("class", "item");
+            td.setAttribute("style", "display:table-cell;")
             td.appendChild(tit);
             td.appendChild(cat);
             td.appendChild(pub);
@@ -199,6 +218,11 @@ function initialize(url, first) {
                 // TODO: This application has been newly launched. Initialize
                 // your application here.
                 showLoading(true);
+                localstr.readText("categories", "Categories").then(
+                    function (data) {
+                        document.getElementById("cctext").setAttribute("value", data);
+                    }
+                );
                 document.getElementById("webBrowse").addEventListener("MSWebViewFrameNavigationCompleted", function () {
                     if (webVisible == true) {
                         document.getElementById("web").setAttribute("style", "visibility:visible; z-index:1;");
@@ -228,8 +252,6 @@ function initialize(url, first) {
         // WinJS.Application.sessionState object, which is automatically
         // saved and restored across suspension. If you need to complete an
         // asynchronous operation before your application is suspended, call
-        // args.setPromise().
-        //args.setPromise(setTile("Test Tile"));
     }
     //registerTask();
     app.start();
