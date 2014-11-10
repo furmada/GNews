@@ -74,7 +74,7 @@ function disableWeb() {
     showLoading(false);
     webVisible = false;
     document.getElementById("webBrowse").stop();
-    document.getElementById("webBrowse").setAttribute("src", "ms-appx://40969furmada.newsreaderforgooglenew/blank.html");
+    document.getElementById("webBrowse").setAttribute("src", "ms-appx-web:///blank.html");
     document.getElementById("webTit").setAttribute("style", "visibility:hidden; position:absolute; left: 10%; top:10px;");
     document.getElementById("webImg").setAttribute("style", "visibility:hidden; float:left; position:absolute; top:-20px; left:10px; transform:scale(0.2)");
     document.getElementById("web").setAttribute("style", "visibility:hidden; z-index:-1;");
@@ -107,7 +107,7 @@ function clearAll() {
     sel.id = "catSelect";
     refresh.id = "refreshBtn";
     refresh.innerHTML = "Refresh";
-    refresh.setAttribute("onclick", 'catSetter(document.getElementById("category").innerHTML);');
+    refresh.setAttribute("onclick", 'showLoading(true); catSetter(document.getElementById("category").innerHTML);');
     refresh.setAttribute("style", "margin-left:40px;");
     sel.setAttribute("onchange", "setCategory()");
     var o_sel = document.createElement("option");

@@ -78,7 +78,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2014-11-10T15:29:17.830</Modified>
+      <Modified>2014-11-10T17:46:24.587</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\js\jquery.js">
       <PackagePath>js\jquery.js</PackagePath>
