@@ -74,6 +74,7 @@ function disableWeb() {
     showLoading(false);
     webVisible = false;
     document.getElementById("webBrowse").stop();
+    document.getElementById("webBrowse").setAttribute("src", "ms-appx://40969furmada.newsreaderforgooglenew/blank.html");
     document.getElementById("webTit").setAttribute("style", "visibility:hidden; position:absolute; left: 10%; top:10px;");
     document.getElementById("webImg").setAttribute("style", "visibility:hidden; float:left; position:absolute; top:-20px; left:10px; transform:scale(0.2)");
     document.getElementById("web").setAttribute("style", "visibility:hidden; z-index:-1;");
@@ -99,10 +100,15 @@ function clearAll() {
     var at = document.createElement("h3");
     var desc = document.createElement("p");
     var sel = document.createElement("select");
+    var refresh = document.createElement("button");
     ie.setAttribute("class", "item");
     at.innerHTML = "News Reader for Google News";
     desc.innerHTML = "Select a category below.";
     sel.id = "catSelect";
+    refresh.id = "refreshBtn";
+    refresh.innerHTML = "Refresh";
+    refresh.setAttribute("onclick", 'catSetter(document.getElementById("category").innerHTML);');
+    refresh.setAttribute("style", "margin-left:40px;");
     sel.setAttribute("onchange", "setCategory()");
     var o_sel = document.createElement("option");
     o_sel.innerHTML = "Select";
@@ -138,6 +144,7 @@ function clearAll() {
     ie.appendChild(at);
     ie.appendChild(desc);
     ie.appendChild(sel);
+    ie.appendChild(refresh);
     tileDescs = ["Google News"];
     document.getElementById("row1").appendChild(ie);
 }
