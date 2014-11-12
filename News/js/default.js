@@ -28,29 +28,35 @@ function setCategory() {
     catSetter(selected);
 }
 function catSetter(cat) {
-    if(cat=="Main"){
+    if (cat == "Main") {
         document.getElementById("category").innerHTML = "Main";
         initialize("http://news.google.com/?output=rss&hl=en", false);
+        return;
     }
-    else if (cat == "World") {
+    if (cat == "World") {
         document.getElementById("category").innerHTML = "World";
         initialize("http://news.google.com/?topic=w&output=rss&hl=en", false);
+        return;
     }
-    else if (cat == "U.S.") {
+    if (cat == "U.S.") {
         document.getElementById("category").innerHTML = "U.S.";
         initialize("http://news.google.com/?topic=n&output=rss&hl=en", false);
+        return;
     }
-    else if (cat == "Business") {
+    if (cat == "Business") {
         document.getElementById("category").innerHTML = "Business";
         initialize("http://news.google.com/?topic=b&output=rss&hl=en", false);
+        return;
     }
-    else if (cat == "Technology") {
+    if (cat == "Technology") {
         document.getElementById("category").innerHTML = "Technology";
         initialize("http://news.google.com/?topic=tc&output=rss&hl=en", false);
+        return;
     }
-    else if (cat == "Sports") {
+    if (cat == "Sports") {
         document.getElementById("category").innerHTML = "Sports";
         initialize("http://news.google.com/?topic=s&output=rss&hl=en", false);
+        return;
     }
     else {
         document.getElementById("category").innerHTML = cat;
@@ -60,6 +66,16 @@ function catSetter(cat) {
 
 function openURL(se) {
     pid = se.parentNode.id;
+    var openedInBrowser = false;
+    localstr.readText("webBrowserDefault").then(function (d) {
+        if (d == "true") {
+            window.open(pid);
+            openedInBrowser = true;
+        }
+    });
+    if (openedInBrowser == true) {
+        return;
+    }
     webVisible = true;
     document.getElementById("webTit").setAttribute("style", "visibility:visible; position:absolute; left: 10%; top:10px;");
     document.getElementById("webImg").setAttribute("style", "visibility:visible; float:left; position:absolute; top:-20px; left:10px; transform:scale(0.2)");
@@ -107,7 +123,7 @@ function clearAll() {
     sel.id = "catSelect";
     refresh.id = "refreshBtn";
     refresh.innerHTML = "Refresh";
-    refresh.setAttribute("onclick", 'showLoading(true); catSetter(document.getElementById("category").innerHTML);');
+    refresh.setAttribute("onclick", 'refresh()');
     refresh.setAttribute("style", "margin-left:40px;");
     sel.setAttribute("onchange", "setCategory()");
     var o_sel = document.createElement("option");
@@ -132,9 +148,9 @@ function clearAll() {
     sel.appendChild(o_tch);
     sel.appendChild(o_spr);
     var prms = localstr.readText("categories", "").then(
-        function(data){
+        function (data) {
             for (cc in data.split(",")) {
-                if (data.split(',')[cc] == "") { continue;}
+                if (data.split(',')[cc] == "") { continue; }
                 var ccat = document.createElement("option");
                 ccat.innerHTML = data.split(",")[cc];
                 sel.appendChild(ccat);
@@ -150,10 +166,32 @@ function clearAll() {
 }
 function loadCategoriesIntoField() {
     localstr.writeText("categories", document.getElementById("cctext").value);
-    clearAll();
+    showLoading(true);
+    catSetter(document.getElementById("category").innerHTML);
+    loadWebOpenPrefs();
+}
+function loadWebOpenPrefs() {
+    localstr.writeText("webBrowserDefault", document.getElementById("openInWeb").checked);
+    localstr.readText("webBrowserDefault").then(
+        function (d) {
+            document.getElementById("openInWeb").checked = Boolean(d);
+    });
+}
+function refresh() {
+    showLoading(true);
+    catSetter(document.getElementById("category").innerHTML);
 }
 function initialize(url, first) {
     clearAll()
+    localstr.readText("categories", "Categories").then(
+        function (data) {
+            document.getElementById("cctext").setAttribute("value", data);
+        }
+    );
+    localstr.readText("webBrowserDefault").then(
+        function (d) {
+            document.getElementById("openInWeb").checked = Boolean(d);
+        });
     var row = 1;
     if (first == true) {
         var ctext = document.getElementById("category");
@@ -171,11 +209,11 @@ function initialize(url, first) {
             var hut = document.createElement("div");
             var hur = document.createElement("div");
             var lnk = el.find("link").text();
-            lnk = lnk.slice(lnk.indexOf("url=")+4);
+            lnk = lnk.slice(lnk.indexOf("url=") + 4);
             tit.innerHTML = el.find("title").text();
             tileDescs.push(el.find("title").text());
             cat.innerHTML = "From " + lnk.slice(0, lnk.indexOf("/", 7));
-            pub.innerHTML = "Published: "+el.find("pubDate").text();
+            pub.innerHTML = "Published: " + el.find("pubDate").text();
             url.innerHTML = "Open Article";
             hur.innerHTML = lnk
             hut.innerHTML = el.find("title").text();
@@ -225,18 +263,13 @@ function initialize(url, first) {
                 // TODO: This application has been newly launched. Initialize
                 // your application here.
                 showLoading(true);
-                localstr.readText("categories", "Categories").then(
-                    function (data) {
-                        document.getElementById("cctext").setAttribute("value", data);
-                    }
-                );
                 document.getElementById("webBrowse").addEventListener("MSWebViewFrameNavigationCompleted", function () {
                     if (webVisible == true) {
                         document.getElementById("web").setAttribute("style", "visibility:visible; z-index:1;");
                         showLoading(false);
                     }
                 });
-                
+
                 initialize();
             } else {
                 // TODO: This application has been reactivated from suspension.
@@ -247,6 +280,15 @@ function initialize(url, first) {
     };
 
     app.onsettings = function (e) {
+        localstr.readText("webBrowserDefault").then(
+        function (d) {
+            document.getElementById("openInWeb").checked = Boolean(d);
+        });
+        localstr.readText("categories", "Categories").then(
+        function (data) {
+            document.getElementById("cctext").setAttribute("value", data);
+        }
+        );
         e.detail.applicationcommands = {
             "Settings": { title: "GNews Settings" }
         };

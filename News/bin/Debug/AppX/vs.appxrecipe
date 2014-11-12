@@ -30,7 +30,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2014-11-07T18:42:01.497</Modified>
+      <Modified>2014-11-10T19:07:55.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\images\back.png">
       <PackagePath>images\back.png</PackagePath>
@@ -78,7 +78,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2014-11-10T17:46:24.587</Modified>
+      <Modified>2014-11-10T19:42:48.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Adam\Documents\Visual Studio 2013\Projects\GNews\News\js\jquery.js">
       <PackagePath>js\jquery.js</PackagePath>
